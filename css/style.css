@@ -11,31 +11,14 @@ body {
   width: 100%;
 }
 
-.screen {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  overflow: hidden;
-}
-
-.top-bar {
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.top-bar img {
+#status {
   width: 100%;
+  position: fixed;
   opacity: 0.95;
-  position: fixed;
 }
 
-.map-box {
+#mapbox {
   width: 100%;
-  margin-bottom: -3px;
 }
 
 .bus-header {
@@ -46,6 +29,7 @@ body {
   background-color: #fff;
   height: 2.7em;
   padding: 0 8px;
+  position: sticky;
 }
 .bus-header p {
   align-self: center;
@@ -53,10 +37,8 @@ body {
 }
 
 .bus-container {
-  overflow:scroll;
   background-color: #111;
   position: absolute;
-  top: 310px;
   left: 0;;
   right: 0;
   overflow: auto;
@@ -136,13 +118,10 @@ body {
 .tab-bar {
   position:fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
   margin-bottom: -3px;
   overflow: hidden;
 }
 
 .tab-bar img {
    width: 100%;
-   height: 100%;
 }
