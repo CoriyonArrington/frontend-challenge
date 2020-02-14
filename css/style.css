@@ -6,19 +6,20 @@ body {
   font-size: 10px;
 }
 
-.iPhone {
-  height: 100%;
-  width: 100%;
-}
-
-#status {
-  width: 100%;
+.screen {
+  z-index: 2;
   position: fixed;
-  opacity: 0.95;
 }
 
-#mapbox {
+.top-bar img {
   width: 100%;
+  opacity: 0.95;
+  position: fixed;
+}
+
+.map-box {
+  width: 100%;
+  margin-bottom: -3px;
 }
 
 .bus-header {
@@ -29,11 +30,15 @@ body {
   background-color: #fff;
   height: 2.7em;
   padding: 0 8px;
-  position: sticky;
 }
+
 .bus-header p {
   align-self: center;
   font-weight: bold;
+}
+
+#buscontainer {
+  top: 310px;
 }
 
 .bus-container {
@@ -124,4 +129,56 @@ body {
 
 .tab-bar img {
    width: 100%;
+   height: 100%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 410px)
+{
+
+#buscontainer {
+  top: 350px;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 767px)
+{
+#buscontainer {
+  top: 385px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+#buscontainer {
+  top: 675px;
+  bottom: -270px;
+  }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+#buscontainer {
+  top: 905px;
+  bottom: -200px;
+  }
+
+.tab-bar {
+  width: 100%;
+}
+
+.bus-header {
+  font-size: 2.4em;
+}
+
+.bus-lines h4 {
+  font-size: 2em;
+}
+
+.times h5 {
+  font-size: 2em;
+}
+
+.times h6 {
+  font-size: 1.6em;
 }
