@@ -22,6 +22,12 @@ body {
   margin-bottom: -3px;
 }
 
+#locator {
+  display: flex;
+  margin-top: -30px;
+  margin-left: 280px;
+}
+
 .bus-header {
   display: flex;
   justify-content: space-between;
@@ -38,7 +44,7 @@ body {
 }
 
 #buscontainer {
-  top: 310px;
+  top: 367px;
 }
 
 .bus-container {
@@ -132,46 +138,128 @@ body {
    height: 100%;
 }
 
-@media screen and (min-width: 360px) and (max-width: 410px)
+@media screen and (min-width: 320px) and (max-width: 359px)
 {
 
-#buscontainer {
-  top: 350px;
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 280px;
   }
+
+  #buscontainer {
+  top: 367px;
+  }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px)
+{
+
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 320px;
+  }
+
+  #buscontainer {
+  top: 407px;
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 410px)
+{
+
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 320px;
+  }
+
+  #buscontainer {
+  top: 423px;
+  }
+
 }
 
 @media screen and (min-width: 411px) and (max-width: 767px)
 {
-#buscontainer {
-  top: 385px;
+
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 370px;
   }
+
+  #buscontainer {
+  top: 462px;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
-#buscontainer {
-  top: 675px;
-  bottom: -270px;
+
+  .screen {
+    width: 100%;
+  }
+
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 720px;
+  }
+
+  #buscontainer {
+  top: 843px;
+  bottom: -4400px;
+  }
+
+  .bus-header {
+    font-size: 2.4em;
+  }
+
+  .bus-lines h4 {
+    font-size: 2em;
+  }
+
+  .times h5 {
+    font-size: 2em;
+  }
+
+  .times h6 {
+    font-size: 1.6em;
   }
 
 }
 
 @media screen and (min-width: 1024px)
 {
-#buscontainer {
-  top: 905px;
-  bottom: -200px;
+  .screen {
+    width: 100%;
   }
 
-.tab-bar {
+  #locator {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 980px;
+  }
+
+  #buscontainer {
+  top: 1102px;
+  bottom: -400px;
+  }
+
+  .tab-bar {
   width: 100%;
 }
 
-.bus-header {
+  .bus-header {
   font-size: 2.4em;
 }
 
-.bus-lines h4 {
+  .bus-lines h4 {
   font-size: 2em;
 }
 
