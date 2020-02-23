@@ -17,6 +17,7 @@ body {
 .status-bar img {
   width: 100%;
 }
+
 .nav-bar {
   padding: 10px 0;
   position: relative;
@@ -49,7 +50,7 @@ body {
 
 img.locator {
   position: absolute;
-  top: 270px;
+  top: 46vh;
   right: 24px;
 }
 
@@ -59,16 +60,15 @@ img.locator {
   position: fixed;
   left: 0;
   right: 0;
-  top: 56vh;
-  height: 4em;
-  margin: 4px 0;
+  top: 57vh;
+  margin: 2px 0;
   padding: 4px 4px;
   border-bottom: 1px solid black;
 }
 
 .bus-header h2 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "SF Pro Display";
   color: #000;
 }
@@ -80,55 +80,20 @@ ul {
   width: 100%;
 }
 
-img.indicator {
-  height: 25px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.bus-lines h3 {
-  font-size: 2em;
-}
-
-.bus-lines h4 {
-  font-size: 1.6em;
-  font-weight: 300;
-}
-
-.tab-bar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  background: #F9F9F9;
-}
-
 .bus-container {
   background-color: #fff;
   position: absolute;
   left: 0;;
   right: 0;
   overflow: auto;
-  top: 63vh;
+  top: 62vh;
   bottom: 8.6vh;
-}
-
-.bus-lines {
-  font-family: "Roboto", sans-serif;
-  background-color: #fff;
-  height: auto;
-  padding: 0 4px;
-  position:relative;
-  border-top: 2px solid black;
-  z-index: 0;
 }
 
 #bus-number {
   background-color: #111;
   height: auto;
-  width: auto;
+  width: 5em;
   margin: 4px;
   padding: 8px;
   border-radius: 6px;
@@ -143,7 +108,7 @@ img.indicator {
 .bus-number h3 {
   color: #fff;
   font-weight: bolder;
-  font-size: 3.4em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -151,10 +116,129 @@ img.indicator {
   color: #000;
   font-weight: 400;
   font-size: 1.2em;
+  text-align: left;
+}
+
+.bus-lines {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  height: auto;
+  padding: 0 4px;
+  position:relative;
+  border-top: 2px solid black;
+  z-index: 0;
+}
+
+.bus-lines h3 {
+  font-size: 1.6em;
+  padding-right: 4px;
+}
+
+.bus-lines h4 {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.bus-lines h6 {
+  font-size: 1.4em;
+  font-weight: 300;
+  padding-right: 10px;
+  padding-top: 4px;
   text-align: center;
 }
 
 .bus-lines:hover {
   background-color: #b580ff;
   color: #000;
+}
+
+img.indicator {
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background: #F9F9F9;
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px)
+{
+  img.locator {
+    top: 46vh;
+  }
+
+  .bus-container {
+    top: 61vh;
+  }
+}
+
+@media screen and (max-height: 711px) and (min-width: 411px)
+{
+  img.locator {
+    top: 46vh;
+  }
+
+  .bus-container {
+    top: 54vh;
+  }
+
+  .bus-header {
+    top: 51vh;
+  }
+
+  .status_nav-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (min-height: 812px) and (min-width: 375px)
+{
+  img.locator {
+    top: 41vh;
+  }
+
+  .bus-container {
+    top: 50vh;
+    bottom: 6.6vh;
+  }
+
+  .bus-header {
+    top: 47vh;
+  }
+
+  .status_nav-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  img.locator {
+    top: 68vh;
+  }
+
+  .map-location {
+    width: 100%;
+  }
+
+  .bus-container {
+    top: 77vh;
+    bottom: 4.6vh;
+  }
+
+  .bus-header {
+    top: 75vh;
+  }
+
+  .status_nav-bar {
+    width: 100%;
+  }
 }
