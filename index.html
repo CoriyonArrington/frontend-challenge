@@ -6,197 +6,199 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
   </head>
   <body>
     <div class="iPhone">
-      <div class="fixed-screen">
+      <div class="screen">
         <div class="status_nav-bar">
-          <div class="status-bar">
-            <img src="images/status-bar.png" alt="status-bar">
+            <div class="status-bar">
+              <img src="images/status-bar.png" alt="status-bar">
+            </div>
+            <div class="nav-bar">
+              <img class="arrow" src="images/back-arrow.png" alt="back button">
+              <h1>BusyBus App</h1>
+            </div>
           </div>
-          <div class="nav-bar">
-            <img class="arrow" src="images/back-arrow.png" alt="back button">
-            <h1>BusyBus App</h1>
-          </div>
-        </div>
         <div class="map-location">
-          <img class="map-box" src="images/map.png" alt="map">
-          <img class="locator" src="images/location.png" alt="locator">
-        </div>
-      </div>
-      <div id="bus-container" class="bus-container">
-        <div class="bus-header">
-          <ul>
-            <li>
-              <h2>Bus Line</h2>
-            </li>
-            <li>
-              <h2>Destination</h2>
-            </li>
-            <li>
-              <h2>Arriving In</h2>
-            </li>
-          </ul>
-        </div>
-        <div id="route 1" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>60</h3>
+            <img class="locator" src="images/location.png" alt="locator">
+            <img class="map-box" src="images/map.png" alt="map">
+          </div>
+        <div class="bus-container">
+          <div class="bus-header">
+            <ul>
+              <li>
+                <h2>Bus Line</h2>
               </li>
-              <h5>EAST</h5>
-            </div>
-            <li>
-              <h4>Randolph & <br>Harbor Dr</br></h4>
-            </li>
-            <li>
-              <h3>20 minutes</h3>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 2" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>124</h3>
+              <li>
+                <h2>Destination</h2>
               </li>
-              <h5>EAST</h5>
-            </div>
-            <li>
-              <h4>Navy Pier</h4>
-            </li>
-            <li>
-              <h3>10 minutes</h3>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 3" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>151</h3>
+              <li>
+                <h2>Arriving In</h2>
               </li>
-              <h5>NORTH</h5>
-            </div>
-            <li>
-              <h4>Devon & <br>Clark </br></h4>
-            </li>
-            <li>
-              <h3>16 minutes</h3>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 4" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>J14</h3>
+            </ul>
+          </div>
+          <div id="route 1" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>60</h3>
+                </li>
+                <h5>EAST</h5>
+              </div>
+              <li>
+                <h4>Randolph & <br>Harbor Dr</br></h4>
               </li>
-              <h5>SOUTH</h5>
-            </div>
-            <li>
-              <h4>103rd & <br>Stony Island</br></h4>
-            </li>
-            <li>
-              <h3>15 minutes</h3>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 5" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>124</h3>
+              <li>
+                <h3>20 minutes</h3>
               </li>
-              <h5>SOUTH</h5>
-            </div>
-            <li>
-              <h4>Navy Pier</h4>
-            </li>
-            <li>
-              <h3>10 minutes</h3>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 6" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>6x</h3>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 2" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>124</h3>
+                </li>
+                <h5>EAST</h5>
+              </div>
+              <li>
+                <h4>Navy Pier</h4>
               </li>
-              <h5>RR</h5>
-            </div>
-            <li>
-              <h4>Jackson<br>Park Express</br></h4>
-            </li>
-            <li>
-              <h6>Not<br>running</br></h6>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 7" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>4</h3>
+              <li>
+                <h3>10 minutes</h3>
               </li>
-              <h5>OOO</h5>
-            </div>
-            <li>
-              <h4>Cottage Grove</h4>
-            </li>
-            <li>
-              <h6>Resumes<br>12:10 am</br></h6>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 8" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>20</h3>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 3" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>151</h3>
+                </li>
+                <h5>NORTH</h5>
+              </div>
+              <li>
+                <h4>Devon & <br>Clark </br></h4>
               </li>
-              <h5>OOO</h5>
-            </div>
-            <li>
-              <h4>Madison</h4>
-            </li>
-            <li>
-              <h6>Resumes<br>12:10 am</br></h6>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
-        </div>
-        <div id="route 9" class="bus-lines">
-          <ul>
-            <div class="bus-number">
-              <li id="bus-number">
-                <h3>157</h3>
+              <li>
+                <h3>16 minutes</h3>
               </li>
-              <h5>OOO</h5>
-            </div>
-            <li>
-              <h4>Streeterville &<br>Taylor</br></h4>
-            </li>
-            <li>
-              <h6>Resumes<br>6:00 am</br></h6>
-            </li>
-          </ul>
-          <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 4" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>J14</h3>
+                </li>
+                <h5>SOUTH</h5>
+              </div>
+              <li>
+                <h4>103rd & <br>Stony Island</br></h4>
+              </li>
+              <li>
+                <h3>15 minutes</h3>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 5" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>124</h3>
+                </li>
+                <h5>SOUTH</h5>
+              </div>
+              <li>
+                <h4>Navy Pier</h4>
+              </li>
+              <li>
+                <h3>10 minutes</h3>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 6" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>6x</h3>
+                </li>
+                <h5>RR</h5>
+              </div>
+              <li>
+                <h4>Jackson<br>Park Express</br></h4>
+              </li>
+              <li>
+                <h6>Not<br>running</br></h6>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 7" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>4</h3>
+                </li>
+                <h5>OOO</h5>
+              </div>
+              <li>
+                <h4>Cottage Grove</h4>
+              </li>
+              <li>
+                <h6>Resumes<br>12:10 am</br></h6>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 8" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>20</h3>
+                </li>
+                <h5>OOO</h5>
+              </div>
+              <li>
+                <h4>Madison</h4>
+              </li>
+              <li>
+                <h6>Resumes<br>12:10 am</br></h6>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 9" class="bus-lines">
+            <ul>
+              <div class="bus-number">
+                <li id="bus-number">
+                  <h3>157</h3>
+                </li>
+                <h5>OOO</h5>
+              </div>
+              <li>
+                <h4>Streeterville &<br>Taylor</br></h4>
+              </li>
+              <li>
+                <h6>Resumes<br>6:00 am</br></h6>
+              </li>
+            </ul>
+            <img class="indicator" src="images/real-time-indicator.svg" alt="indicator">
+          </div>
+          <div id="route 10" class="bus-lines"></div>
         </div>
-        <div id="route 10" class="bus-lines"></div>
-      </div>
-      <div class="tab-bar">
-          <img src="images/recents-icon.png" alt="recent icon">
-          <img src="images/search-icon.png" alt="search icon">
-          <img src="images/favorites-icon.png" alt="favorite icon">
+        <div class="tab-bar">
+            <img src="images/recents-icon.png" alt="recent icon">
+            <img src="images/search-icon.png" alt="search icon">
+            <img src="images/favorites-icon.png" alt="favorite icon">
+        </div>
       </div>
     </div>
   </body>
