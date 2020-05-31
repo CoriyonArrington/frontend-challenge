@@ -54,7 +54,7 @@ body {
 }
 
 .nav-bar h1 {
-  font-size: 2.4em;
+  font-size: 24px;
   font-family: "SF Pro Display";
   color: #fff;
   text-align: center;
@@ -102,7 +102,7 @@ img.locator {
 
 .bus-header h2 {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 14px;
   font-family: "SF Pro Display";
   color: #000;
 }
@@ -117,7 +117,7 @@ ul {
 #bus-number {
   background-color: #111;
   height: auto;
-  width: 4em;
+  width: 3em;
   margin: 4px;
   padding: 8px;
   border-radius: 6px;
@@ -132,40 +132,39 @@ ul {
 .bus-number h3 {
   color: #fff;
   font-weight: bolder;
-  font-size: 1.6em;
+  font-size: 14px;
   text-align: center;
 }
 
 .bus-number h5 {
   color: #000;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 12px;
   text-align: left;
 }
 
 .bus-lines {
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   background-color: #fff;
-  height: auto;
-  padding: 0 4px;
   position:relative;
   border-top: 2px solid black;
   z-index: 0;
+  top: 1.8vh;
 }
 
 .bus-lines h3 {
-  font-size: 1.4em;
+  font-size: 14px;
   padding-right: 4px;
 }
 
 .bus-lines h4 {
-  font-size: 1.2em;
+  font-size: 12px;
   font-weight: 300;
   text-align: center;
 }
 
 .bus-lines h6 {
-  font-size: 1.2em;
+  font-size: 12px;
   font-weight: 300;
   padding-right: 10px;
   padding-top: 4px;
@@ -173,11 +172,6 @@ ul {
 }
 
 .bus-lines:hover {
-  background-color: #b580ff;
-  color: #000;
-}
-
-.bus-lines:focus {
   background-color: #b580ff;
   color: #000;
 }
@@ -197,76 +191,26 @@ img.indicator {
   background: #F9F9F9;
 }
 /
-/* @media screen and (min-width: 360px) and (max-width: 414px)
-{
-  img.locator {
-    top: 46vh;
+
+@media all and (min-width: 320px) {
+
+.bus-lines {
+  top: 1.2vh;
+}
+
+  /* .bus-header h2 {
+    font-size: 16px;
   }
 
-  .bus-container {
-    top: 61vh;
-  }
-} */
-
-/* @media screen and (max-height: 711px) and (min-width: 411px)
-{
-  img.locator {
-    top: 46vh;
+  .bus-lines h3 {
+    font-size: 16px;
   }
 
-  .bus-container {
-    top: 54vh;
+  .bus-lines h4 {
+    font-size: 14px;
   }
 
-  .bus-header {
-    top: 51vh;
-  }
-
-  .status_nav-bar {
-    width: 100%;
-  }
-} */
-
-/* @media screen and (min-height: 812px) and (min-width: 375px)
-{
-  img.locator {
-    top: 41vh;
-  }
-
-  .bus-container {
-    top: 50vh;
-    bottom: 6.6vh;
-  }
-
-  .bus-header {
-    top: 47vh;
-  }
-
-  .status_nav-bar {
-    width: 40vh;
-  }
-} */
-
-/* @media screen and (min-width: 768px)
-{
-  img.locator {
-    top: 68vh;
-  }
-
-  .map-location {
-    width: 100%;
-  }
-
-  .bus-container {
-    top: 77vh;
-    bottom: 4.6vh;
-  }
-
-  .bus-header {
-    top: 75vh;
-  }
-
-  .status_nav-bar {
-    width: 100%;
-  }
-} */
+  .bus-lines h6 {
+    font-size: 14px;
+  } */
+}
